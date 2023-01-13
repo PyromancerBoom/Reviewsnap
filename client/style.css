@@ -64,6 +64,7 @@ body {
 .Wrapper {
   flex: 0 0 80%;
   max-width: 80%;
+  position:relative; top: -250px;
 }
 
 .Title {
@@ -90,7 +91,7 @@ button {
     margin-top: 15px;
     font-size: 15px;
     font-weight: 700;
-    left: 50%;
+    /* left: 100%; */ 
     position: absolute;
     cursor: pointer;
     border: none;
