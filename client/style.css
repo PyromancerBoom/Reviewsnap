@@ -77,6 +77,41 @@ body {
   text-shadow: -0.1rem 0.1rem 0.2rem var(--colorPrimary800);
 }
 
+.button-box{
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+button {
+    width: 150px;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    left: 50%;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+}
+
+.button {
+    align-items: center;
+    background: #fff;
+    color: black;
+    border: 1px solid black;
+    transition: background 200ms ease-out,
+                color 200ms ease-out,
+                border 200ms ease-out; 
+}
+
+.button:hover {
+    background: #E00462;
+    color: #fff;
+    border: none;
+}
+
 .Input {
   position: relative;
 }
