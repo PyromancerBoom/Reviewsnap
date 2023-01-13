@@ -7,9 +7,9 @@
   --gutterLg: 1.6rem;
   --gutterXl: 2.4rem;
   --gutterXx: 7.2rem;
-  --colorPrimary400: #7e57c2;
-  --colorPrimary600: #5e35b1;
-  --colorPrimary800: #4527a0;
+  --colorPrimary400: #2b1a47;
+  --colorPrimary600: #170e29;
+  --colorPrimary800: #170e33;
   --fontFamily: "Dosis", sans-serif;
   --fontSizeSm: 1.2rem;
   --fontSizeMd: 1.6rem;
@@ -54,7 +54,7 @@ body {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-  color: #455A64;
+  color: #192125;
   background-color: #020c3b;
   font-family: var(--fontFamily);
   font-size: var(--fontSizeMd);
