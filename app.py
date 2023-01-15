@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -8,7 +8,10 @@ def index():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    return render_template('index.html')
+    prediction = request.form.to_dict() 
+    # empty not working right now
+    print(prediction)
+    return render_template('predict.html', prediction = prediction)
 
 if __name__ == '__main__':
     app.run()
