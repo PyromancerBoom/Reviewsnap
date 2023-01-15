@@ -8,10 +8,10 @@ def index():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    prediction = request.form.to_dict() 
-    # empty not working right now
-    print(prediction)
-    return render_template('predict.html', prediction = prediction)
+    link = request.form['link']
+    # the link is then passed to the ML Code which returns an output stored in a variable
+    # this variable x will be put inside prediction = x
+    return render_template('predict.html', prediction = link)
 
 if __name__ == '__main__':
     app.run()
