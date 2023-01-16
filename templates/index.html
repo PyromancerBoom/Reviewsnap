@@ -9,22 +9,30 @@
     <link rel="stylesheet" href="/static/style.css">
   </head>
   <body>
+    <br>
+    <br>
     <div class="Wrapper">
       <section>
         <article class="post">
-          <h1 class="Title"><img src="/static/logo.png" alt="" height="70" width="70"> ReviewSnap</h1>
+          <h1 class="Title"><img src="/static/logo.png" alt="" height="100" width="100"> ReviewSnap</h1>
         <form action="/predict" method="post">
           <div class="Input">
-            <input type="text" id="input" class="Input-text" placeholder="Enter Amazon Link" name="link">
+            <input type="text" id="input" class="Input-text" placeholder="Enter Amazon Product Link" name="link">
             <label for="input" class="Input-label">Amazon Link</label>
             <div class="button-box">
-                <button class="button" type="submit" value="submit">Submit</button>
+                <button class="button" type="submit" value="submit">Generate Review Summary </button>
             </div>
-          </div>
         </form>
+        
       </div>
-      </article>
+    </article>
     </section>
+
+    <div class="cautionText">
+      Once you click submit, please wait as output might take 3-5 minutes to generate. 
+      <br> If the [Tab : "ReviewSnap"] is showing loading,  then your output is being generated. Please wait
+      <br> <br>Thank you for using ReviewSnap. Please give us good marks and we'll help you make good choices.
+    </div>
         
 	<script src="main.js"></script>
   <script src="themePredict.js"></script>
