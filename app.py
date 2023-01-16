@@ -178,7 +178,7 @@ def FinalFunction(inputURLbyUser):
         with open(filepath, 'r', encoding='utf-8') as infile:
             return infile.read()
 
-    openai.api_key = "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"
+    openai.api_key = "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"
 
     def save_file(content, filepath):
         with open(filepath, 'w', encoding='utf-8') as outfile:
@@ -223,7 +223,7 @@ def FinalFunction(inputURLbyUser):
         worthiness = "Worthiness: " + \
             a1[1].split("Weaknesses: ")[1].split(
                 "Functionality: ")[1].split("Worthiness: ")[1]
-        return (strengths, weaknesses, functionality, worthiness)
+        return (product_input, strengths, weaknesses, functionality, worthiness)
         #("\n"+"REVIEW SNAP: HELPING YOU MAKE BETTER DECISIONS IN A SNAP"+"\n"+"\n"+"Snap Review generated for: "+product_input+"\n"+"\n"+"Strengths: "+ strengths+"\n"+"Weaknesses: "+ weaknesses+"\n"+"Functionality: "+ functionality+"\n"+"Worthiness: "+ worthiness+"\n")
 
     oneStarNumberPages = findNumberOfReviewsPerStar(model_input_url, "one")//10
@@ -312,8 +312,8 @@ def predict():
     link = request.form['link']
     # the link is then passed to the ML Code which returns an output stored in a variable
     # this variable x will be put inside prediction = x
-    a, b, c, d = FinalFunction(link)
-    return render_template('predict.html', a=a, b=b, c=c, d=d)
+    a, b, c, d, e = FinalFunction(link)
+    return render_template('predict.html', a=a, b=b, c=c, d=d, e=e,)
 
 
 if __name__ == '__main__':
