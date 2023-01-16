@@ -1,0 +1,16 @@
+body{
+    margin-top: 3rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+  }
+  /* Dark theme styles */
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+}
