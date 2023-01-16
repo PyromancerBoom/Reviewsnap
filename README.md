@@ -12,4 +12,6 @@ Install all the python dependecies required :
 
 Now, run
 
-app.py
+'''
+python app.py
+'''
