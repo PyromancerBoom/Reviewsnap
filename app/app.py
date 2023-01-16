@@ -301,7 +301,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html')
+    return render_template('../index.html')
 
 
 #model = pickle.load(open('ReviewSnap.py', 'rb'))
@@ -313,7 +313,7 @@ def predict():
     # the link is then passed to the ML Code which returns an output stored in a variable
     # this variable x will be put inside prediction = x
     a, b, c, d, e = FinalFunction(link)
-    return render_template('predict.html', a=a, b=b, c=c, d=d, e=e,)
+    return render_template('../predict.html', a=a, b=b, c=c, d=d, e=e,)
 
 
 if __name__ == '__main__':
