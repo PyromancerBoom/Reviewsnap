@@ -10,7 +10,9 @@
   </head>
   <body>
     <div class="Wrapper">
-        <h1 class="Title"><img src="/static/logo.png" alt="" height="70" width="70"> ReviewSnap</h1>
+      <section>
+        <article class="post">
+          <h1 class="Title"><img src="/static/logo.png" alt="" height="70" width="70"> ReviewSnap</h1>
         <form action="/predict" method="post">
           <div class="Input">
             <input type="text" id="input" class="Input-text" placeholder="Enter Amazon Link" name="link">
@@ -21,6 +23,10 @@
           </div>
         </form>
       </div>
-	<script src="index.js"></script>
+      </article>
+    </section>
+        
+	<script src="main.js"></script>
+  <script src="themePredict.js"></script>
   </body>
 </html>
