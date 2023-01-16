@@ -304,7 +304,7 @@ def predict():
     # the link is then passed to the ML Code which returns an output stored in a variable
     # this variable x will be put inside prediction = x
     prediction = FinalFunction(link)
-    return render_template('predict.html', prediction=link)
+    return render_template('predict.html', prediction=prediction)
 
 
 if __name__ == '__main__':
