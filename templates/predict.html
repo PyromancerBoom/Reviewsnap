@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+  
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Review Snap</title>
     <link rel="stylesheet" href="/static/predict.css">
-  </head>
+    </head>
   <body>
-    <h1>A short review of the product.</h1>
-    <p class="output"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores architecto fugiat cum! Error iure iusto quasi tempora. Illum hic esse quas, vitae debitis perspiciatis omnis voluptas ipsam repudiandae obcaecati consequuntur est labore reprehenderit aspernatur porro cumque saepe adipisci voluptate iure dolores dolore eos, asperiores cum? Eveniet itaque alias soluta ut! </p>
-
+      <nav>
+        <div class="theme-switch-wrapper">
+             <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+          <em>&nbsp Dark Mode</em>
+        </div>
+      </nav>  
+      <section>
+          <article class="post">
+            <h1>A short review of the product you selected : </h1>
+    <p class="output"> Lorem ipsum, dolor sit amet consectetur adipisicing 
+      elit. Maiores architecto fugiat cum! Error iure iusto quasi tempora. Illum hic esse quas, 
+      vitae debitis perspiciatis omnis voluptas ipsam repudiandae obcaecati consequuntur est labore reprehenderit 
+      aspernatur porro cumque saepe adipisci voluptate iure dolores dolore eos, asperiores cum? Eveniet itaque alias 
+      soluta ut! </p>
     <!-- 
       <h3>{{ prediction }}</h3>
       {{ prediction }} is the final short summary of the product, it's text -->
-      <div>
-        <input type="checkbox" class="checkbox" id="checkbox">
-      <label for="checkbox" class="label">
-        <i class="fas fa-moon"></i>
-        <i class='fas fa-sun'></i>
-        <div class='ball'>
-      </label>
-    </div>
+        </article>
+      </section>
       <script src="../themePredict.js"></script>
   </body>
 </html>
