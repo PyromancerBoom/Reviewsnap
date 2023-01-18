@@ -12,6 +12,8 @@ Install all the python dependecies required :
 
 Now, run
 
-'''
+"""
 python app.py
-'''
+"""
+
+Please note, for safety api key was removed
