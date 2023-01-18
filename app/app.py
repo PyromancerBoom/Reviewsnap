@@ -178,7 +178,7 @@ def FinalFunction(inputURLbyUser):
         with open(filepath, 'r', encoding='utf-8') as infile:
             return infile.read()
 
-    openai.api_key = "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"
+    # openai.api_key = " " Add KEY here
 
     def save_file(content, filepath):
         with open(filepath, 'w', encoding='utf-8') as outfile:
